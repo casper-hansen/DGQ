@@ -25,10 +25,10 @@ def set_seed(seed):
 
 def get_wikitext2(nsamples, seed, seqlen, model):
     
-    # traindata = load_dataset('wikitext', 'wikitext-2-raw-v1', split='train')
-    # testdata = load_dataset('wikitext', 'wikitext-2-raw-v1', split='test')
-    traindata = load_from_disk('wikitrain')
-    testdata = load_from_disk('wikitest')
+    traindata = load_dataset('wikitext', 'wikitext-2-raw-v1', split='train')
+    testdata = load_dataset('wikitext', 'wikitext-2-raw-v1', split='test')
+    # traindata = load_from_disk('wikitrain')
+    # testdata = load_from_disk('wikitest')
     print(traindata)
     from transformers import AutoTokenizer
     try:

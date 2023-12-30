@@ -13,12 +13,19 @@ classifiers = [
     "License :: OSI Approved :: Apache Software License",
 ]
 dependencies = [
-    "safetensors==0.3.1", "datasets==2.10.1", "sentencepiece",
-    "torch", "torchvision", 
-    "transformers==4.34.0", 
-    "lm_eval", "texttable",
-    "toml", "attributedict",
-    "protobuf", "numpy", "accelerate==0.20.3"
+    "transformers==4.34.0",
+    "datasets=2.16.0",
+    "safetensors==0.3.1",
+    "accelerate==0.20.3"
+    "sentencepiece",
+    "torch",
+    "torchvision",
+    "lm_eval",
+    "texttable",
+    "toml",
+    "attributedict",
+    "protobuf",
+    "numpy",
 ]
 
 [tool.setuptools.packages.find]
