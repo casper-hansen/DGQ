@@ -5,13 +5,13 @@ setup(
     name='dgq',
     ext_modules=[
         cpp_extension.CUDAExtension(
-            name='dgq._CUDA',
+            name='dgq_cuda',
             sources=[
                 'linear.cu',
                 'bmm.cu',
                 'bindings.cpp'
             ],
-            include_dirs=['dgq/kernels/include'],
+            include_dirs=['dgq/kernels/include', 'submodules/cutlass/include', 'submodules/cutlass/tools/util/include'],
             extra_link_args=['-lcublas_static', '-lcublasLt_static',
                              '-lculibos', '-lcudart', '-lcudart_static',
                              '-lrt', '-lpthread', '-ldl', '-L/usr/lib/x86_64-linux-gnu/'],

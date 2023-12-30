@@ -1,6 +1,6 @@
 import torch
 from dgq.quant.quant_linear import QuantLinear
-from dgq._CUDA import (linear_a8_w4_b8_o8,
+from dgq_cuda import (linear_a8_w4_b8_o8,
                      linear_a8_w4_bfp32_ofp32
                      )
 

@@ -1,5 +1,5 @@
 import torch
-from dgq._CUDA import bmm_s8t_s8n_f32t
+from dgq_cuda import bmm_s8t_s8n_f32t
 
 
 class BMM_S8T_S8N_F32T(torch.nn.Module):

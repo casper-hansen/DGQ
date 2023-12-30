@@ -2,7 +2,7 @@ import sys
 sys.path.append(".")
 import torch
 import os
-from dgq._CUDA import linear_a8_w4_b8_o8, linear_a8_w4_bfp32_ofp32
+from dgq_cuda import linear_a8_w4_b8_o8, linear_a8_w4_bfp32_ofp32
 from icecream import ic
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
