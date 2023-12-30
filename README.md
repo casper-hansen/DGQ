@@ -18,6 +18,8 @@ pip install -e .
 ### Kernel install 
 CUDA 12.1 need to be installed first. We recommend using the bitsandbytes script(https://raw.githubusercontent.com/TimDettmers/bitsandbytes/main/cuda_install.sh).
 ```
+git clone --recurse-submodules https://github.com/casper-hansen/DGQ.git
+apt-get update && apt-get install cmake
 source environment.sh
 bash build_cutlass.sh
 cd dgq/kernels/
