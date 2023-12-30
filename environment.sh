@@ -1,6 +1,6 @@
 export KERNEL_ROOT=$PWD
 export CUTLASS_PATH="$KERNEL_ROOT/submodules/cutlass"
-export CUDA_PATH="/home/zlm/cuda-12.1/cuda-12.1/"
+export CUDA_PATH="/usr/local/cuda"
 export PATH="$CUDA_PATH/bin:$PATH"
 
 # CUDA
