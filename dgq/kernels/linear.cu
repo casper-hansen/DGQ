@@ -73,7 +73,7 @@ torch::Tensor linear_a8_w4_bfp32_ofp32(torch::Tensor input,  // INT8
   auto scales_ptr = scales8.data_ptr<int8_t>();
   auto zeros_ptr  = zeros.data_ptr<int8_t>();
 
-  launch_dequant(weight, weight_int8, scales_ptr, zeros_ptr, groupsize);
+//   launch_dequant(weight, weight_int8, scales_ptr, zeros_ptr, groupsize);
   using ElementOutput = float;
   using ElementAccumulator = int32_t;
   using ElementComputeEpilogue = float;
